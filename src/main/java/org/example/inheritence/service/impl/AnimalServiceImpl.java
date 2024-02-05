@@ -31,6 +31,6 @@ public class AnimalServiceImpl implements AnimalService {
         if (id == null){
             throw new EntityNotFoundException("Animal not found by id " + id);
         }
-        return Optional.of(animalrepository.getById(id));
+        return animalrepository.findById(id);
     }
 }

@@ -2,12 +2,9 @@ package org.example.inheritence.service.impl;
 
 import org.example.inheritence.exception.DogNotFoundException;
 import org.example.inheritence.model.Dog;
-import org.example.inheritence.repository.DogRepository;
 import org.example.inheritence.service.DogService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -35,7 +32,6 @@ class DogServiceImplTest {
 
     @Test
     void findById() {
-        Dog dog = dogService.findById(1l);
-        assertDoesNotThrow(()->DogNotFoundException.class);
+        Dog dog = assertDoesNotThrow(() -> { return dogService.findById(1L);});
     }
 }
