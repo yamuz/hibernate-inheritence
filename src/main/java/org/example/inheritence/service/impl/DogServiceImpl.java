@@ -1,8 +1,9 @@
-package org.example.inheritence.service;
+package org.example.inheritence.service.impl;
 
 import org.example.inheritence.exception.DogNotFoundException;
 import org.example.inheritence.model.Dog;
 import org.example.inheritence.repository.DogRepository;
+import org.example.inheritence.service.DogService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,8 +1,9 @@
-package org.example.inheritence.service;
+package org.example.inheritence.service.impl;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.example.inheritence.model.Animal;
 import org.example.inheritence.repository.AnimalRepository;
+import org.example.inheritence.service.AnimalService;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

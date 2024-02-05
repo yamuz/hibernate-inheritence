@@ -1,0 +1,1 @@
+insert into Dog(id, name, type ) values (1L, 'Volk', 'Pitbull');
